@@ -1,0 +1,200 @@
+/* GENERAL */
+body {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5vw;
+}
+.title_and_desc {
+    direction: ltr;
+    width: 50%;
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: bolder;
+    font-size: 40px;
+}
+.principal_desc {
+    font-size: 15px;
+    font-weight: 400;
+}
+.title_and_rating {
+    display: flex;
+    flex-direction: row;
+}
+.ratings {
+    width: 50%;
+    text-align: left;
+    padding-top: 5vh;
+}
+.individual_rates {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 17%, 89%);
+    padding: 10px;
+}
+.card {
+    background-color: hsl(300, 43%, 22%);
+    margin: 3vw 3vw 3vw 0;
+    border-radius: 5px;
+    padding: 25px;
+    transition: 0.3s;
+    box-shadow: 6px 4px 8px 0 rgba(117, 117, 117, 0.7);
+    width: 70vw;
+    height: 30vh;
+}
+.card img {
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+.card:hover {
+    box-shadow: 6px 8px 16px 0 rgba(117, 117, 117, 0.7);
+    transform: translateY(-20px)
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+.name {
+    font-weight: 800;
+    color: white;
+}
+.name_subtitle {
+    font-weight: 600;
+    color: hsl(333, 80%, 67%);
+}
+.description {
+    color: white;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.user_info {
+    display: flex;
+    flex-direction: row;
+}
+.name_desc {
+    margin-left: 20px;
+}
+.attribution {
+    font-weight: bold;
+}
+
+
+/*DESKTOP*/
+@media only screen and (min-width:1400px) {
+    body {
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 5vw;
+    }
+    .title_and_desc {
+        direction: ltr;
+        width: 50%;
+    }
+    h1 {
+        color: hsl(300, 43%, 22%);
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    .principal_desc {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .title_and_rating {
+        display: flex;
+        flex-direction: row;
+    }
+    .ratings {
+        width: 50%;
+        text-align: left;
+        padding-top: 5vh;
+    }
+    .individual_rates {
+        margin: 10px;
+        font-weight: bold;
+        font-size: 13px;
+        color: hsl(300, 43%, 22%);
+        background-color: hsl(300, 17%, 89%);
+        padding: 10px;
+    }
+    .card {
+        background-color: hsl(300, 43%, 22%);
+        margin: 3vw 3vw 3vw 0;
+        border-radius: 5px;
+        padding: 25px;
+        transition: 0.3s;
+        box-shadow: 6px 4px 8px 0 rgba(117, 117, 117, 0.7);
+        width: 70vw;
+        height: 30vh;
+    }
+    .card img {
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+    }
+    .card:hover {
+        box-shadow: 6px 8px 16px 0 rgba(117, 117, 117, 0.7);
+        transform: translateY(-20px)
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+    }
+    .name {
+        font-weight: 800;
+        color: white;
+    }
+    .name_subtitle {
+        font-weight: 600;
+        color: hsl(333, 80%, 67%);
+    }
+    .description {
+        color: white;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .user_info {
+        display: flex;
+        flex-direction: row;
+    }
+    .name_desc {
+        margin-left: 20px;
+    }
+    .attribution {
+        font-weight: bold;
+    }
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width:500px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 20px;
+    }
+    .title_and_rating {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ratings{
+        margin-right: 30%;
+        text-align: center;
+    }
+
+    .individual_rates{
+        margin: 10px !important;
+        width: 60vw;
+        
+    }
+
+    .individual_rates .stars{
+        text-align: center;
+    }
+}
